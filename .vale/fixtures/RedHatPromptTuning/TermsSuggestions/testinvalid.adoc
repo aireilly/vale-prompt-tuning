@@ -1,0 +1,45 @@
+above
+afterwards
+all caps
+below
+bottom left
+bottom right
+bugfix
+choose
+componentization
+componentize
+consumes
+drag and drop
+distro
+executable
+frontend
+gzip
+higher
+hit
+in order to
+information on
+jar
+launch
+legacy
+Navigate
+once
+operator
+operators
+refer to
+segfault
+shell
+spawn
+start up
+tar
+tar file
+tarball
+This clause which is nonrestrictive
+This clause, that is restrictive
+thus
+translate
+via
+x64
+x86
+x86-64
+zip
+zip file
