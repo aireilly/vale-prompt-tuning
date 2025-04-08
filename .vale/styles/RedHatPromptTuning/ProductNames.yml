@@ -1,0 +1,113 @@
+---
+extends: substitution
+ignorecase: true
+level: error
+message: "Use complete Red Hat product names. Use '%s' rather than '%s'."
+action:
+  name: replace
+swap:
+  RHAI|RAI: Red Hat AI
+  RHEL AI|RHEL-AI: Red Hat Enterprise Linux AI
+  RHOAI|OAI|OSAI|RHOSAI: Red Hat OpenShift AI
+  OAISM|OSAISM|RHOAISM|RHOSAISM: Red Hat OpenShift AI Self-Managed
+  RHAIA|AIA|Red Hat OpenShift AI Accelerator: Red Hat AI Accelerator
+  Red Hat InstructLab|RHAIILIC: Red Hat AI InstructLab on IBM Cloud
+  RHC: Red Hat Cloud
+  RHSI: Red Hat Service Interconnect
+  RHCS: Red Hat Certificate System
+  RHDE: Red Hat Device Edge
+  RHDEE|DEE|Red Hat OpenShift Device Edge Essentials|RHODEE: Red Hat Device Edge Essentials
+  RHDS: Red Hat Directory Server
+  RHOSO|OSO|OSSOS|RHOSSOS: Red Hat OpenStack Services on OpenShift
+  RHQ|RHCR: Red Hat Quay
+  RHQi|RHQIO: Red Hat Quay.io
+  RHO|RHOS: Red Hat OpenShift
+  RHOCP|OCP: Red Hat OpenShift Container Platform
+  OKE|RHOKE|Red Hat Kubernetes Engine: Red Hat OpenShift Kubernetes Engine
+  OPP|RHOPP|Red Hat Platform Plus: Red Hat OpenShift Platform Plus
+  RHOSVE|RHOVE|OSVE|OVE|Red Hat Virtualization Engine: Red Hat OpenShift Virtualization Engine
+  ODS|OSDS|RHODS|RHOSDS: Red Hat OpenShift Developer Services
+  Developer Hub|RHDH|DH: Red Hat Developer Hub
+  Developer Hub Local|RHDH Local|DHL|DH-L|DH Local|RHDHL|RHDH-L: Red Hat Developer Hub Local
+  TSSC|RHTSSC: Red Hat Trusted Software Supply Chain
+  RHTAP|TAP: Red Hat Trusted Application Pipeline
+  RHTAS|TAS: Red Hat Trusted Artifact Signer
+  RHTASC|TASC|TAS-C: Red Hat Trusted Artifact Signer Client
+  RHTPA|TPA: Red Hat Trusted Profile Analyzer
+  RHCS|Cloud Services: Red Hat Cloud Services
+  OCS|RHOCS: OpenShift cloud services
+  RHOD|OSD|RHOSD: Red Hat OpenShift Dedicated
+  ARO|ARHO|MARHO|Azure OpenShift: Microsoft Azure Red Hat OpenShift for Microsoft Azure Government
+  RHOIBMC|ROKS|RHOIC|OpenShift on IBM Cloud: Red Hat OpenShift on IBM Cloud
+  ROSA|Red Hat OpenShift on AWS|Red Hat OpenShift AWS|RHOSAWS|OSAWS|ARO|ARHO: Red Hat OpenShift Service on AWS
+  ROSAHCP|ROSA-HCP: Red Hat OpenShift Service on AWS Hosted Control Planes
+  OAS|RHOAS: OpenShift application services
+  RHOAD|RHOAPID: Red Hat OpenShift API Designer
+  RHOAM|OAM: Red Hat OpenShift API Management
+  RHOCPELS|RHOCP-ELS|RHOCP ELS|OCPELS|OCP-ELS|OCP ELS: Red Hat OpenShift Container Platform Extended Life Cycle Support Add-On
+  Celonis EMS on ROSA|CEMS on ROSA: Celonis Execution Management System on Red Hat OpenShift Service on Amazon Web Services
+  DVPRHO|DVP-RHO|DVP RHO: Dell Validated Platform for Red Hat OpenShift
+  RHEL: Red Hat Enterprise Linux
+  RHEL Desktop|RHELD|RHEL-D: Red Hat Enterprise Linux Desktop
+  RHEL Server|RHELS|RHEL-S: Red Hat Enterprise Linux Server
+  RHEL Server for HPC|RHELS|RHEL-S|RHEL-HPC|RHELHPC: Red Hat Enterprise Linux Server for High-Performance Computing
+  RHEL Workstation|RHELW|RHEL-W: Red Hat Enterprise Linux for Workstations
+  RHCOS|RHEL CoreOS|RHELCOS|CoreOS|Coreos: Red Hat Enterprise Linux CoreOS
+  RHEL for ARM|RHELSA|RHEL-SA|RHELARM: Red Hat Enterprise Linux for ARM
+  RHEL for Distributed Computing|RHELDC|RHEL-DC: Red Hat Enterprise Linux for Distributed Computing
+  RHEL for Real Time|RHELRT|RHEL-RT: Red Hat Enterprise Linux for Real Time
+  TPLM|RHELTPLM|RHEL TPLM|RHEL-TPLM: Red Hat Enterprise Linux for Third Party Linux Migration
+  RHEL for Virtual Datacenters|RHELVD|RHEL-VD: Red Hat Enterprise Linux for Virtual Datacenters
+  RHIVOS|IVOS: Red Hat In-Vehicle Operating System
+  RHDT|DT: Red Hat Developer Toolset
+  ELS Add-On|RHEL ELS|RHEL-ELS|ELCS Add-On: Red Hat Enterprise Linux Extended Life Cycle Support Add-On
+  EUS Add-On|RHEL EUS|RHEL-EUS: Red Hat Enterprise Linux Extended Update Support Add-On
+  HA Add-On|HAAO|RHELHA|RHEL-HA: Red Hat Enterprise Linux High Availability Add-On
+  RHEL LB|RHEL-LB|LBAO|LB Add-On: Red Hat Enterprise Linux Load Balancer Add-On
+  RHELRS|RHEL-RS|RS Add-On|RSAO: Red Hat Enterprise Linux Resilient Storage Add-On
+  RHELSS|RHEL-SS|SSAO|SS Add-On: Red Hat Enterprise Linux Security Select Add-On
+  RHSC|RHSCL: Red Hat Software Collections
+  Update Infrastructure|RHUI: Red Hat Update Infrastructure
+  SQL Server on RHEL|SQLSRHEL: Microsoft SQL Server on Red Hat Enterprise Linux
+  RHEL for IBM Z|RHELIBMZ|RHEL-IBMZ: Red Hat Enterprise Linux for IBM Z and LinuxONE
+  RHEL for Power LE|RHELPLE: Red Hat Enterprise Linux for IBM Power Little Endian
+  RHEL for SAP Applications|RHELSAP|RHELSAPA Red Hat Enterprise Linux for SAP: Red Hat Enterprise Linux for SAP Applications
+  RHEL for SAP Solutions|RHELSAP|RHELSAPS|Red Hat Enterprise Linux for SAP: Red Hat Enterprise Linux for SAP Solutions
+  RHEL for SAP Solutions Essentials|RHELSAPE|RHELSAPSE|Red Hat Enterprise Linux for SAP Essentials: Red Hat Enterprise Linux for SAP Solutions Essentials
+  RHACM|Advanced Cluster Management for Kubernetes|RHACMK|RHACMFK: Red Hat Advanced Cluster Management for Kubernetes
+  RHACMV|Red Hat Advanced Cluster Management|RHACM|ACM-V|ACMV: Red Hat Advanced Cluster Management for Virtualization
+  RHACS|Advanced Cluster Security for Kubernetes|RHACSK|RHACSFK: Red Hat Advanced Cluster Security for Kubernetes
+  RHACSCS|ACSCS: Red Hat Advanced Cluster Security Cloud Service
+  Red Hat Ansible|Red Hat Ansible Automation|Ansible Automation|RHAAP|AAP: Red Hat Ansible Automation Platform
+  RHAAPAWS|AAPAWS|Ansible from AWS: Red Hat Ansible Automation Platform from AWS
+  RHAAPGC|AAPGC|Ansible from Google Cloud: Red Hat Ansible Automation Platform from Google Cloud
+  RHAAPSAWS|RHAAPS-AWS|RHAAPS AWS|AAPSAWS|AAPS-AWS|AAPS AWS: Red Hat Ansible Automation Platform Service on AWS
+  RHAAPMA|RHAAPA|AAPMA|AAPA|Ansible on Azure: Red Hat Ansible Automation Platform on Microsoft Azure
+  RHAAPSMMA|RHAAPSMA|AAPSMMA|AAPSMA|Ansible Self-Managed on Azure: Red Hat Ansible Automation Platform Self-Managed on Microsoft Azure
+  RHAD|Ansible Developer|Red Hat Ansible Automation Platform Developer|RHAAPD: Red Hat Ansible Developer
+  Red Hat Ansible Automation Platform Inside|RHAI|Ansible Inside: Red Hat Ansible Inside
+  EM|RHEM: Red Hat Edge Manager
+  RHS: Red Hat Satellite
+  RHSS: Red Hat Satellite Server
+  RHI: Red Hat Insights
+  RHI|RHIRHEL|IRHEL|Insights for RHEL: Red Hat Insights for Red Hat Enterprise Linux
+  RHI|RHIRHO|RHIOCP|IOCP: Red Hat Insights for Red Hat OpenShift
+  RHDS|Data Services: Red Hat Data Services
+  RHCS|Ceph Storage|Red Hat Ceph: Red Hat Ceph Storage
+  RHODF|ODF|Red Hat Data Foundation: Red Hat OpenShift Data Foundation
+  RHODFMS|ODFMS|Red Hat Data Foundation Managed Service: Red Hat OpenShift Data Foundation Managed Service
+  RHODFA|ODFA|DFA|Red Hat Data Foundation Advanced: Red Hat OpenShift Data Foundation Advanced
+  NPSS|RHNPSS: Red Hat Network Platform Sustaining Service
+  RHSDS: Red Hat Services Discovery Session
+  CIP|RHCIP: Red Hat Cloud Innovation Practice
+  RHELCBS|CBS: Red Hat Enterprise Linux Core Build Service
+  RHELHC: Red Hat Enterprise Linux Health Check
+  RHMHC|MHC: Red Hat Middleware Health Check
+  RHOIL|RHOILR|OIL|OILR: Red Hat Open Innovation Labs Residency
+  RHSA: Red Hat Satellite Accelerator
+  RHSO|Services Offering: Red Hat Services Offering
+  RHSJ: Red Hat Services Journey
+  RHSSCC: Red Hat Services Solution
+  RHSHC|SHC: Red Hat Storage Health Check
+  RHTC|RHT&C|GLS|Global Learning Services: Red Hat Training and Certification
+  RHT: Red Hat Training
